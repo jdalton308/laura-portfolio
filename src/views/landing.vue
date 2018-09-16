@@ -56,18 +56,20 @@ export default {
   }
 
   .landing-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     position: relative;
     z-index: 0;
     height: 200px;
-    padding-top: 85px;
-    padding-right: 20px;
+    padding: 20px;
     text-align: right;
     background-image: url('../assets/bg-side-profile-bw.jpg');
     background-size: cover;
     background-position: left center;
 
     .shadow-button {
-      
+      flex: 0 0 auto;
     }
   }
 }

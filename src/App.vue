@@ -6,6 +6,8 @@
 
     <router-view/>
 
+    <my-footer />
+
   </div>
 </template>
 
@@ -14,12 +16,14 @@
 <script>
 
 import MyHeader from './components/header.vue';
+import MyFooter from './components/footer.vue';
 
 
 export default {
   name: 'app',
   components: {
     MyHeader,
+    MyFooter,
   }
 }
 
@@ -37,6 +41,9 @@ body {
   margin: 0;
   font-family: 'Open Sans', arial, sans-serif;
   color: $grey-dark;
+}
+.page {
+  min-height: calc(100vh - 220px);
 }
 
 
